@@ -144,17 +144,12 @@ export default function Home() {
           </h1>
         </div>
 
-        <div
-          className="animate-fade-up -rotate-2 rounded-sm bg-white/70 p-[clamp(0.3rem,0.8dvh,0.6rem)] shadow-[0_20px_45px_-20px_rgba(58,53,46,0.35)] ring-1 ring-black/5 transition-transform duration-500 ease-out hover:rotate-0"
-          style={{ animationDelay: "0.3s" }}
-        >
-          <Image
-            src={photo}
-            alt="Rica and Eric"
-            preload
-            className="h-[clamp(10rem,45dvh,29rem)] w-auto rounded-xs object-cover"
-          />
-        </div>
+        <Image
+          src={photo}
+          alt="Rica and Eric"
+          preload
+          className="h-[clamp(10rem,45dvh,29rem)] w-auto rounded-xs object-cover"
+        />
 
         <div
           className="animate-fade-up flex flex-col items-center gap-[clamp(0.2rem,0.7dvh,0.45rem)] text-center"
