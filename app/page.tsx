@@ -1,6 +1,6 @@
 import type { CSSProperties } from "react";
 import Image from "next/image";
-import photo from "../public/rica_sison.png";
+import photo from "../public/rica_sison.webp";
 import Countdown from "./countdown";
 
 const WEDDING_TITLE = "Rica & Eric's Wedding";
