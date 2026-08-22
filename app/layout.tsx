@@ -1,5 +1,10 @@
 import type { Metadata, Viewport } from "next";
-import { Geist, Geist_Mono, Cormorant_Garamond, Arizonia } from "next/font/google";
+import {
+  Geist,
+  Geist_Mono,
+  Cormorant_Garamond,
+  Arizonia,
+} from "next/font/google";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -24,7 +29,7 @@ const arizonia = Arizonia({
   weight: "400",
 });
 
-const TITLE = "Rica & Eric — Save the Date";
+const TITLE = "Eric & Rica — Save the Date";
 const DESCRIPTION = "October 3, 2026 · SG Farm, Tupi";
 
 export const metadata: Metadata = {

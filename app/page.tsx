@@ -1,6 +1,6 @@
 import type { CSSProperties } from "react";
 import Image from "next/image";
-import photo from "../public/rica_sison.webp";
+import photo from "../public/save_the_date.png";
 import Countdown from "./countdown";
 
 const WEDDING_TITLE = "Rica & Eric's Wedding";
@@ -118,12 +118,12 @@ export default function Home() {
 
       <div className="relative z-10 flex h-full w-full max-w-xl flex-col items-center justify-center gap-[clamp(0.35rem,1.2dvh,0.9rem)] px-6 py-[clamp(0.25rem,1dvh,0.5rem)] sm:px-10">
         <div className="flex flex-col items-center gap-[clamp(0.15rem,0.6dvh,0.4rem)] text-center">
-          <div
+          {/* <div
             className="animate-fade-up flex h-[clamp(1.75rem,4.5dvh,3rem)] w-[clamp(1.75rem,4.5dvh,3rem)] items-center justify-center rounded-full border border-gold-light bg-white/50 font-serif text-[clamp(0.6rem,1.5dvh,0.9rem)] tracking-wide text-gold shadow-[0_1px_3px_rgba(58,53,46,0.08)] backdrop-blur-sm"
             style={{ animationDelay: "0s" }}
           >
-            R &amp; E
-          </div>
+            E &amp; R
+          </div> */}
 
           <div
             className="animate-fade-up flex items-center gap-[clamp(0.5rem,1.5dvw,0.75rem)]"
@@ -137,19 +137,21 @@ export default function Home() {
           </div>
 
           <h1
-            className="animate-fade-up font-script py-1 text-[clamp(2.2rem,7.5dvh,4.5rem)] leading-normal text-ink"
+            className="animate-fade-up font-script text-[clamp(2.2rem,7.5dvh,4.5rem)] leading-normal text-ink"
             style={{ animationDelay: "0.2s" }}
           >
             Eric &amp; Rica
           </h1>
         </div>
 
-        <Image
-          src={photo}
-          alt="Rica and Eric"
-          preload
-          className="h-[clamp(10rem,45dvh,29rem)] w-auto rounded-xs object-cover"
-        />
+        <div className="p-1.5 bg-white rounded-xl shadow-md">
+          <Image
+            src={photo}
+            alt="Rica and Eric"
+            preload
+            className="h-[clamp(10rem,45dvh,29rem)] w-auto rounded-lg object-cover"
+          />
+        </div>
 
         <div
           className="animate-fade-up flex flex-col items-center gap-[clamp(0.2rem,0.7dvh,0.45rem)] text-center"
@@ -183,8 +185,8 @@ export default function Home() {
           </div>
 
           <p className="mt-5 max-w-xs text-[clamp(0.6rem,1.5dvh,0.8rem)] leading-snug text-taupe [@media(max-height:480px)]:hidden">
-            A formal invitation with all the details will follow. We can&apos;t
-            wait to celebrate with you!
+            A formal invitation with all the details will follow.
+            <br /> We can&apos;t wait to celebrate with you!
           </p>
         </div>
       </div>
