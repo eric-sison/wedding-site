@@ -118,12 +118,12 @@ export default function Home() {
 
       <div className="relative z-10 flex h-full w-full max-w-xl flex-col items-center justify-center gap-[clamp(0.35rem,1.2dvh,0.9rem)] px-6 py-[clamp(0.25rem,1dvh,0.5rem)] sm:px-10">
         <div className="flex flex-col items-center gap-[clamp(0.15rem,0.6dvh,0.4rem)] text-center">
-          {/* <div
-            className="animate-fade-up flex h-[clamp(1.75rem,4.5dvh,3rem)] w-[clamp(1.75rem,4.5dvh,3rem)] items-center justify-center rounded-full border border-gold-light bg-white/50 font-serif text-[clamp(0.6rem,1.5dvh,0.9rem)] tracking-wide text-gold shadow-[0_1px_3px_rgba(58,53,46,0.08)] backdrop-blur-sm"
+          <div
+            className="animate-fade-up relative flex h-[clamp(1.5rem,3.6dvh,2.25rem)] w-[clamp(1.5rem,3.6dvh,2.25rem)] items-center justify-center rounded-full border border-gold-light/70 bg-white/50 font-serif text-[clamp(0.5rem,1.2dvh,0.7rem)] tracking-wide text-gold shadow-[0_1px_3px_rgba(58,53,46,0.08)] backdrop-blur-sm before:absolute before:inset-0.75 before:rounded-full before:border before:border-gold-light/40"
             style={{ animationDelay: "0s" }}
           >
             E &amp; R
-          </div> */}
+          </div>
 
           <div
             className="animate-fade-up flex items-center gap-[clamp(0.5rem,1.5dvw,0.75rem)]"
@@ -144,12 +144,15 @@ export default function Home() {
           </h1>
         </div>
 
-        <div className="p-1.5 bg-white rounded-xl shadow-md">
+        <div
+          className="animate-fade-up rounded-2xl border border-gold-light/50 bg-white p-2 shadow-[0_18px_40px_-20px_rgba(58,53,46,0.45)]"
+          style={{ animationDelay: "0.3s" }}
+        >
           <Image
             src={photo}
             alt="Rica and Eric"
             preload
-            className="h-[clamp(10rem,45dvh,29rem)] w-auto rounded-lg object-cover"
+            className="h-[clamp(10rem,45dvh,29rem)] w-auto rounded-lg object-cover ring-1 ring-inset ring-gold-light/30"
           />
         </div>
 
