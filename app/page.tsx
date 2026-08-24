@@ -169,7 +169,18 @@ export default function Home() {
           <p className="font-serif text-[clamp(1.1rem,3.4dvh,1.5rem)] text-ink italic">
             October 3, 2026
           </p>
-          <p className="text-[clamp(0.6rem,1.7dvh,0.8rem)] uppercase tracking-[0.2em] text-taupe">
+          <p className="flex items-center gap-1.5 text-[clamp(0.6rem,1.7dvh,0.8rem)] uppercase tracking-[0.2em] text-taupe">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="1.5"
+              aria-hidden
+              className="h-[1em] w-[1em] shrink-0"
+            >
+              <path d="M12 21s7-6.5 7-11.5A7 7 0 1 0 5 9.5C5 14.5 12 21 12 21z" />
+              <circle cx="12" cy="9.5" r="2.25" />
+            </svg>
             {WEDDING_LOCATION}
           </p>
 
@@ -180,9 +191,21 @@ export default function Home() {
               href={CALENDAR_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="animate-fade-up inline-flex h-[clamp(1.9rem,4.4dvh,2.35rem)] items-center gap-2 rounded-full bg-ink px-[clamp(1rem,3dvw,1.5rem)] text-[clamp(0.7rem,1.6dvh,0.85rem)] leading-none text-cream shadow-[0_10px_25px_-12px_rgba(58,53,46,0.6)] transition-colors duration-300 hover:bg-terracotta"
+              className="animate-fade-up inline-flex h-[clamp(1.9rem,4.4dvh,2.35rem)] items-center gap-1.5 rounded-full bg-ink px-[clamp(1rem,3dvw,1.5rem)] text-[clamp(0.7rem,1.6dvh,0.85rem)] leading-none text-cream shadow-[0_10px_25px_-12px_rgba(58,53,46,0.6)] transition-colors duration-300 hover:bg-terracotta"
               style={{ animationDelay: "0.5s" }}
             >
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.5"
+                aria-hidden
+                className="h-[1.1em] w-[1.1em] shrink-0"
+              >
+                <rect x="4" y="5" width="16" height="15" rx="2" />
+                <path d="M4 9h16" />
+                <path d="M8 3v4M16 3v4" />
+              </svg>
               Add to Calendar
             </a>
           </div>
